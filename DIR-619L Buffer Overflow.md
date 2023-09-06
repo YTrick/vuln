@@ -4,6 +4,8 @@
 
 D-Link DIR-619L B1 2.02 was found to contain a stack overflow in multiple functions. This vulnerability allows attackers to trigger a denial of service (DoS) through web page parameters.
 
+![image](https://github.com/YTrick/vuln/assets/57278844/38ddd2a7-64dd-4c0f-9d6e-54e125a30408)
+
 ## 1.formResetStatistic Function
 
 ### Vulnerability analysis
