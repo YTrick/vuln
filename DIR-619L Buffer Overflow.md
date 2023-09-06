@@ -10,7 +10,7 @@ D-Link DIR-619L B1 2.02 was found to contain a stack overflow in multiple functi
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formResetStatistic function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/997e69a1-df58-48ec-9be7-fdd1ba82e839)
 
@@ -27,7 +27,7 @@ The data gets from front-end is processed in the formResetStatistic function, th
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetEnableWizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/b76c6dfa-675b-4d92-9285-1563b75b8844)
 
@@ -39,7 +39,7 @@ The data gets from front-end is processed in the formSetEnableWizard function, t
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetWizard1 function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/40435c5a-d64f-41a3-b976-cb2f073a2ed1)
 
@@ -51,7 +51,7 @@ The data gets from front-end is processed in the formSetWizard1 function, the we
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetWizard2 function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/ddb41ebf-4a94-4d5e-96fa-a3e290222904)
 
@@ -63,7 +63,7 @@ The data gets from front-end is processed in the formSetWizard2 function, the we
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetWizardSelectMode function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/36c5a164-ae98-4222-833e-eea652a18843)
 
@@ -75,7 +75,7 @@ The data gets from front-end is processed in the formSetWizardSelectMode functio
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formLogin function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/a27c4fa2-bfa3-4e0d-829a-9273285455ac)
 
@@ -89,7 +89,7 @@ The data gets from front-end is processed in the formLogin function, the websGet
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetEmail function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/5f120469-0bfb-4c92-bde7-b11744b66451)
 
@@ -103,7 +103,7 @@ The data gets from front-end is processed in the formSetEmail function, the webs
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formEasySetupWizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/114fa313-aea4-4f74-a7a5-fbc605963753)
 
@@ -115,7 +115,7 @@ The data gets from front-end is processed in the formEasySetupWizard function, t
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetPassword function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/448490fa-411d-42a2-8979-7a67e6489500)
 
@@ -129,7 +129,7 @@ The data gets from front-end is processed in the formSetPassword function, the w
 
 ### Vulnerability analysis
 
-The data gets from front-end is processed in the formSetEasy_Wizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
 
 ![image](https://github.com/YTrick/vuln/assets/57278844/7267d429-35ec-4894-ad0a-ee4a17710b08)
 
