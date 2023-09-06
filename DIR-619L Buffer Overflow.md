@@ -12,15 +12,16 @@ D-Link DIR-619L B1 2.02 was found to contain a stack overflow in multiple functi
 
 The data gets from front-end is processed in the formResetStatistic function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MGViMWJhNjg3ZTA4N2QwYjI5N2RiMjAwZmRiMjk2NTVfaGVFSndMbjJHN1pEWFVhakxkWVJrakxJMmFpa0g5b3BfVG9rZW46SG9COGJnZWI4b0ptVVZ4ek16aWNaRHRUbmtnXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/997e69a1-df58-48ec-9be7-fdd1ba82e839)
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=N2ViZGRjNmYxZDVlYjBhM2U3MDI0NGU3ZjY3NzU5YzNfdmdlTEt0SUJINXU3NWdRWG1qOE93ejhnWVluVHg2R0ZfVG9rZW46THRCUmJ1TElVb0I2c3J4RTA2UmNKOTFlbm9MXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=NDQwNTJlNWJmNjYyNjc1NWFkMTg1MmRkNDYzNTY2MTdfS0hXQUpOeXBJMzkxOVdyYXVUcDc0VmlVb05GZWNFcGpfVG9rZW46SHlLYWJjQjc0b0xlTEN4WFhhaGNycGxlbnVjXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/8054a4fe-2f14-46df-a91d-c1944ff05d43)
+
+![image](https://github.com/YTrick/vuln/assets/57278844/9b65fabb-7020-4c85-a0b6-b979cac95f23)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MmIyZDdjMzBiMjVlZWYzMTFkNjIxOTk0ZDMwMTgzMTRfYTk0c1RlVkJyUk10OXJMNHd3dExlQlU5aVoyVnZyNHVfVG9rZW46QkxuNmI1TklSb09lVVV4cHFTaWNrMm9kbmdnXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/0b858aea-5442-4784-9412-f1bbc2e4cfe1)
 
 ## 2.formSetEnableWizard Function
 
@@ -28,11 +29,11 @@ The data gets from front-end is processed in the formResetStatistic function, th
 
 The data gets from front-end is processed in the formSetEnableWizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MmE2YjM3NTMwMjA5YTI4YjM3ZWU5YzE2MTk4MjJkMmVfNDhIYnFOME85N2E3UzVuSUhHNUlEVGQyeTdNZ1hQUnJfVG9rZW46UE9OY2JSaklBb29rQnJ4SXhVeWNCN01rbnVmXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/b76c6dfa-675b-4d92-9285-1563b75b8844)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2Q5NGI1NTU1NWE3ZTUzMzFjOTU2YjlmZGY4OGZkNWZfMHE2T1hjaUxBaU4wNnROOURSODROV1FNSnc3aldDalVfVG9rZW46RDRiUWJNRk9Rb0czUTl4OEVHdmNndm1FbjZkXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/33fcc0dd-b541-4047-874f-6249784cf3a7)
 
 ## 3.formSetWizard1 Function
 
@@ -40,11 +41,11 @@ The data gets from front-end is processed in the formSetEnableWizard function, t
 
 The data gets from front-end is processed in the formSetWizard1 function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGQ5OTJkNDY1NmVkYzZmMzM4ZGI2MmEzZGFhYTBhZTJfRVpCTEliOUJTY0lFUFgzdWtJelZobEN0eTFYTWF6T0hfVG9rZW46V1A3MGJJTTVlb0R4ZnJ4OVFlZ2NKajlIbnJkXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/40435c5a-d64f-41a3-b976-cb2f073a2ed1)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MmIyNjk1NDQ1MWMwNWYxOTY5MWZkNjVjY2NlODE1MTVfazB5QUtEUldyM0JTOERIOE9hOWg0d1RjYUltMFE4U3dfVG9rZW46R2V4c2I2Smtab0VNZEl4QnhBRWNBY1BWblNjXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/00c4ceeb-c626-4101-9702-f1bdce3f601e)
 
 ## 4.formSetWizard2 Function
 
@@ -52,11 +53,11 @@ The data gets from front-end is processed in the formSetWizard1 function, the we
 
 The data gets from front-end is processed in the formSetWizard2 function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JhMWY4ODFkODU3ZDA2ZDY0ZWJiOTg5ZTFjOTRhY2RfSGNKRGV5aDZiY1VpazhvVXdERzVmR0RDRE4wMWJmaTlfVG9rZW46RVRtbGJwTkVab2h6Wk14WVBhTWNIY1JybndoXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/ddb41ebf-4a94-4d5e-96fa-a3e290222904)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MjI1Y2RkNGZhOWMyOWNmZGMwZmIwYTU1ZDBiMWY3YjFfMkZmenRsbGRyaVh4NmdMNjFpZWFPTlRVd05PVkhpZW1fVG9rZW46Q2FGWGJzZnJ6b0xPTHl4bWNVQ2NHQlVUbjhiXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/102889ae-6568-4f41-b7fa-efec78bd2475)
 
 ## 5.formSetWizardSelectMode Function
 
@@ -64,11 +65,11 @@ The data gets from front-end is processed in the formSetWizard2 function, the we
 
 The data gets from front-end is processed in the formSetWizardSelectMode function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=NTQzNWJhZGMzMmY1MGMxMDNkODc2NTRlMDgxMTdiNmJfWHYxWVZYQnZZRlQ4TWl2TWQ4U1lMTVlYOUx3bXBlTzdfVG9rZW46RVdLcGIzRTF0b3dnMWt4NTVvemNzVDNQbjZmXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/36c5a164-ae98-4222-833e-eea652a18843)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MWZkNDZmNzQzYWM4NDljOTA3OTM2ZGQzMDI2YTQ5MjlfUWxmUE5xYm1idFdKT3JKNVlkdGMzdGtGZUgyNXY0NWdfVG9rZW46VmUzNWJnUWNPb1NDMDh4bGp6UWNTVUI1bmRoXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/e7519dca-b4c0-49b4-a119-9a4ad0d2f612)
 
 ## 6.formLogin Function
 
@@ -76,13 +77,13 @@ The data gets from front-end is processed in the formSetWizardSelectMode functio
 
 The data gets from front-end is processed in the formLogin function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=YjcxNjQzZmE5ZWFiOTc1ZDZlYjY1MzA5MWNhMGRhMDRfVzdTT2F6RllQaWFzbGFyT215Z3JlWWRZYWtIWnQ5c25fVG9rZW46TW55dGJBMVFrb0dTREV4MHY1RmNIakRkblFiXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/a27c4fa2-bfa3-4e0d-829a-9273285455ac)
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=YzUxMDUyYTg4MmFmMjMzZGJkZmZiOTkyNTE0OTc0ODFfVk5jaFFoTUN3VDFRZ25sRUdRVG9ZRVQ2a2xKNFFDUVhfVG9rZW46Q1paZ2JudHpYb1VuVlJ4RlBEYWNxSnRrblI3XzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/98873804-90b6-4821-8812-dec9a2d4e1b6)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=ZThiNDQ3ZGQxMWEyYzkwYjc3MTc3OWIxODk5NmExYTZfV01Fc1hmS0lFNzNJTTJ0VlZZU2ZiaklocEx4ZWVEcnhfVG9rZW46UU85VmJmN21Tb0pUSVR4S0pIcWM2SG1kbjRlXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/b5b8cfd3-8d8e-4a9a-8e38-b1cb06013899)
 
 ## 7.formSetEmail Function
 
@@ -90,13 +91,13 @@ The data gets from front-end is processed in the formLogin function, the websGet
 
 The data gets from front-end is processed in the formSetEmail function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=NjJkNGM5MzFlMzJjY2Y2MmM3ZWM4MTE5YzUxM2RjMjhfSUZhNmlVV1VzclZQOHE1MTM2SXhkNmZ1VmR6Y3VIN2hfVG9rZW46TjVBeWJmOWJTb0Z2ZDZ4ZlNpRmNYOWxhbmdlXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/5f120469-0bfb-4c92-bde7-b11744b66451)
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=OTE0MWE1ZTk1ZWI1MzIyOTUyNmEzYjI2MmMzMDAzYmVfbkN0Smp1ajljaDVBOERGTTVBVEg3RFR1M2hkdjN6bHpfVG9rZW46TkswTmJTRTJXb0JIRmJ4cElUWmMzRG84bkVlXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/ca8f90bb-153f-48f9-a4cf-69c0cf9e726b)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=NDVlZGZmMjcwMWQ3MWU5ZWVkYzdlNWRhODMwY2M0MjlfRWNKQjFhUTBvQnVaTmN2U0Z0T0NsTWJ4ZERaRXJRaG5fVG9rZW46RDVUV2Iydlpqb09XUXl4ckNWUmNZWlo2bjVmXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/ce3b4f16-594a-419d-b8be-644b47999906)
 
 ## 8.formEasySetupWizard Function
 
@@ -104,11 +105,11 @@ The data gets from front-end is processed in the formSetEmail function, the webs
 
 The data gets from front-end is processed in the formEasySetupWizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=MmY0NDA0YjVmZWFlZmYzODg3YjYyZjVjOWE0NGQ0NTFfSGpPcVNPNDBwY1NPbUZDaTM0YVVNSEtjd1pWdURhMnBfVG9rZW46SzljU2J4cmN3b2lrd0F4YTFIWGNvVllhbnNjXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/114fa313-aea4-4f74-a7a5-fbc605963753)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2Q5YmEwZjY2ZDE5NjQ0NWIxZjQ3NWViM2YzMzgyMmZfWU5XT292ZjVjNnBOa1c0bnpHSlcxNmRqbXhNbFdiV1lfVG9rZW46Qk56bmI4OWNjbzhGUHJ4YnJMaGNBRU1FbmtjXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/a0f9907e-b602-4297-ac1d-ceadd36ff292)
 
 ## 9.formSetPassword Function
 
@@ -116,13 +117,13 @@ The data gets from front-end is processed in the formEasySetupWizard function, t
 
 The data gets from front-end is processed in the formSetPassword function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGY2ZGUzYTk2MDg4MDM2ZTkwOTQ4ZTI0M2Y2ZGU4OTBfSWpVOGpDb0xvWjVKNDJRWU1vNGhCT2JVdDAyUEJqZGlfVG9rZW46RWJ3OWI1ZHR1b3Fja0R4U2RhV2NFcllobkZmXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/448490fa-411d-42a2-8979-7a67e6489500)
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZlMDRkNDhiNDEzNzE5OWVkZWI5YjEzYjFmN2VlZDlfZmJ1U0NMTlliUUJ3UFplWThhVnVZdlByQkQ3aHRJdUhfVG9rZW46UjRvRWJsSUhnb3lYejN4b095VmNZQWRzbjhjXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/0bf1c1b8-25b0-4e2b-b36e-fb82c02c7c3e)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=YTM1ZDAyMzRmNWRmZjEzZmE2YTgxNDQxOGZiZDAyYThfWlE1akN1T3JHcmtMOU9OZ0NQbmNMd0NBZmpCVEpRMnZfVG9rZW46WkxoR2J1dlBLb0ZqRG14dkJ1YWNnS3l2bnhkXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/cac4abb8-1950-4f03-ac21-17586a07de06)
 
 ## 10.formSetEasy_Wizard Function
 
@@ -130,8 +131,8 @@ The data gets from front-end is processed in the formSetPassword function, the w
 
 The data gets from front-end is processed in the formSetEasy_Wizard function, the websGetVar function gets the data passed in from the front end, and the sprintf is used later to directly store the data in the stack buffer. so it will overwrite the normal data in the stack, and that will cause crash.
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=YWE0NmMzOTAxNmQwNTg0YmEzM2VhMDJjYzkxMWU2NmFfa1pqYkZBTzY1Q0ZWc3ZZbE55dFZjRTVKWkxGcXhKazNfVG9rZW46UnJoTGJuV1JLbzJ5blp4Q1pIeWM5Z2NWbkRnXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/7267d429-35ec-4894-ad0a-ee4a17710b08)
 
 ### POC
 
-![img](https://r1bj0v83p8l.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2QyNjA3N2ViNTM4NjEwNDdiYzdkZTgwNmFmYjY3ZDVfNTloNzQwSDQxRnowa3pYU0ZEbkViN1M3allHR0w4bEdfVG9rZW46TW1VcGJERlNZb2VRbmp4T3VJT2NSSVc4blZiXzE2OTM5ODM5NDA6MTY5Mzk4NzU0MF9WNA)
+![image](https://github.com/YTrick/vuln/assets/57278844/015c0878-23c7-4e15-b375-7f1bfabbde96)
