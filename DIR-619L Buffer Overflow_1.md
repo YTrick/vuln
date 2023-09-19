@@ -135,6 +135,6 @@ The websGetVar function obtains the currtime parameter from the front-end and st
 
 ### POC
 
-![image](https://github.com/YTrick/vuln/assets/57278844/00157baf-b87f-4964-88cf-1b02ecf5e5fc)
+![image](https://github.com/YTrick/vuln/assets/57278844/6642c7bc-2f62-4a21-9abd-20d579dbf39e)
 
 
