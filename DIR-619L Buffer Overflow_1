@@ -1,0 +1,138 @@
+# DIR-619L Buffer Overflow
+
+**Vulnerability description**
+
+D-Link DIR-619L B1 2.02 was found to contain a stack overflow in multiple functions. This vulnerability allows attackers to trigger a denial of service (DoS) through web page parameters.
+
+
+
+## 1.formSetWAN_Wizard534 Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/16951128716884.png)
+
+### POC
+
+![image-20230919164053981](DIR-619L Buffer Overflow_1/image-20230919164053981.png)
+
+## 2.formSetWAN_Wizard55 Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/16951128832677.png)
+
+### POC
+
+![image-20230919164357549](DIR-619L Buffer Overflow_1/image-20230919164357549.png)
+
+## 3.formSetWAN_Wizard56 Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511289360410.png)
+
+### POC
+
+![image-20230919164410239](DIR-619L Buffer Overflow_1/image-20230919164410239.png)
+
+## 4.formSetWAN_Wizard7 Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511290251513.png)
+
+![img](DIR-619L Buffer Overflow_1/169511290893016.png)
+
+### POC
+
+![image-20230919164421263](DIR-619L Buffer Overflow_1/image-20230919164421263.png)
+
+## 5.formSetWanDhcpplus Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511291571819.png)
+
+![img](DIR-619L Buffer Overflow_1/169511292069122.png)
+
+### POC
+
+![image-20230919164433409](DIR-619L Buffer Overflow_1/image-20230919164433409.png)
+
+## 6.formSetWanNonLogin Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511292772225.png)
+
+![img](DIR-619L Buffer Overflow_1/169511293259128.png)
+
+### POC
+
+![image-20230919164446802](DIR-619L Buffer Overflow_1/image-20230919164446802.png)
+
+## 7.formSetWanPPPoE Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511293948631.png)
+
+![img](DIR-619L Buffer Overflow_1/169511294710634.png)
+
+### POC
+
+![image-20230919164457175](DIR-619L Buffer Overflow_1/image-20230919164457175.png)
+
+## 8.formSetWanPPTP Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511295390137.png)
+
+![img](DIR-619L Buffer Overflow_1/169511295829640.png)
+
+### POC
+
+![image-20230919164508814](DIR-619L Buffer Overflow_1/image-20230919164508814.png)
+
+## 9.formSetWanL2TP Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the curtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![img](DIR-619L Buffer Overflow_1/169511296514443.png)
+
+### POC
+
+![image-20230919164520328](DIR-619L Buffer Overflow_1/image-20230919164520328.png)
+
+## 10.formLanguageChange Function
+
+### Vulnerability analysis
+
+The websGetVar function obtains the currtime parameter from the front-end and stores the data on the stack through the sprintf function. However, due to the lack of data length restrictions, a buffer overflow vulnerability is created.
+
+![image-20230919164631189](DIR-619L Buffer Overflow_1/image-20230919164631189.png)
+
+### POC
+
+![image-20230919164723393](DIR-619L Buffer Overflow_1/image-20230919164723393.png)
+
